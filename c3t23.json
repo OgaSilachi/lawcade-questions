@@ -1,24 +1,552 @@
 [
   {
-    "question": "Which Texas Rule governs the filing of an answer by a defendant?",
+    "question": "Under Texas Rules of Civil Procedure, what is the general deadline for a defendant to file an answer after being served?",
     "options": [
-      "TRCP 83",
-      "TRCP 84",
-      "TRCP 85",
-      "TRCP 86",
-      "TRCP 88"
+      "10 days from service",
+      "20 days from service",
+      "By 5:00 p.m. on the Monday next after 20 days from service",
+      "30 days from service",
+      "By the end of the calendar month of service"
     ],
     "answer": 2
   },
   {
-    "question": "What is the deadline to file a general denial in Texas state court?",
+    "question": "Which Texas Rule governs the filing of a general denial?",
     "options": [
-      "Within 10 days of service",
-      "On or before the Monday next after 20 days from service",
-      "30 days after service",
-      "Before the first hearing",
-      "Before discovery begins"
+      "TRCP 84",
+      "TRCP 85",
+      "TRCP 92",
+      "TRCP 90",
+      "TRCP 80"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What type of pleading should a defendant file to challenge the sufficiency of a plaintiff's petition?",
+    "options": [
+      "Motion to Dismiss",
+      "Special Exception",
+      "Special Appearance",
+      "Plea to the Jurisdiction",
+      "Motion for Summary Judgment"
     ],
     "answer": 1
+  },
+  {
+    "question": "Which rule must a defendant follow to raise a Special Appearance in Texas?",
+    "options": [
+      "TRCP 85",
+      "TRCP 86",
+      "TRCP 120a",
+      "TRCP 90",
+      "TRCP 91a"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If a defendant files a Special Appearance, what is the consequence of also filing a general denial at the same time?",
+    "options": [
+      "The special appearance is preserved",
+      "The special appearance is waived",
+      "The answer is stayed",
+      "The court must hold a hearing within 10 days",
+      "The case is automatically removed to federal court"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Sample procedural question 6: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 7: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 8: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 9: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 10: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 11: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 12: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 13: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 14: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 15: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 16: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 17: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 18: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 19: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 20: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 21: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 22: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 23: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 24: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 25: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 26: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 27: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 28: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 29: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 30: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 31: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 32: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 33: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 34: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 35: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 36: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 37: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 38: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 39: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 40: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 41: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 42: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 43: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 44: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 45: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 46: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 47: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 48: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 49: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sample procedural question 50: What is required for...",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D",
+      "Option E"
+    ],
+    "answer": 0
   }
 ]
