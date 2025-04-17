@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What rule governs the exclusion of expert testimony in Texas?",
+    "options": [
+      "TRE 702",
+      "TRCP 194",
+      "TRE 401",
+      "TRE 701",
+      "TRCP 192"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Under Daubert/Robinson, what must the court assess regarding expert testimony?",
+    "options": [
+      "Expert's hourly rate",
+      "Expert's friendliness",
+      "Relevance and reliability of the methodology",
+      "Whether the jury understands it",
+      "Trial court\u2019s preference"
+    ],
+    "answer": 2
+  }
+]

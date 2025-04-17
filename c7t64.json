@@ -1,0 +1,24 @@
+[
+  {
+    "question": "Which rule governs motions for summary judgment in Texas?",
+    "options": [
+      "TRCP 165a",
+      "TRCP 245",
+      "TRCP 166a",
+      "TRCP 193",
+      "TRCP 91a"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What must a party show in a traditional motion for summary judgment?",
+    "options": [
+      "Discovery abuse",
+      "No genuine issue of material fact",
+      "Error in pleadings",
+      "Late evidence",
+      "Hearsay"
+    ],
+    "answer": 1
+  }
+]

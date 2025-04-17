@@ -1,0 +1,24 @@
+[
+  {
+    "question": "Which Texas Rule governs the filing of an answer by a defendant?",
+    "options": [
+      "TRCP 83",
+      "TRCP 84",
+      "TRCP 85",
+      "TRCP 86",
+      "TRCP 88"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the deadline to file a general denial in Texas state court?",
+    "options": [
+      "Within 10 days of service",
+      "On or before the Monday next after 20 days from service",
+      "30 days after service",
+      "Before the first hearing",
+      "Before discovery begins"
+    ],
+    "answer": 1
+  }
+]

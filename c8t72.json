@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What is the term for the process of questioning potential jurors?",
+    "options": [
+      "Voir dire",
+      "Interrogatory",
+      "Deposition",
+      "Challenge for cause",
+      "Panel review"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is a peremptory challenge?",
+    "options": [
+      "A challenge for bias",
+      "A challenge without needing to state a reason",
+      "A motion to strike pleadings",
+      "A challenge to evidence",
+      "A judicial review"
+    ],
+    "answer": 1
+  }
+]
