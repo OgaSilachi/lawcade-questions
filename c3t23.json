@@ -1,500 +1,253 @@
 [
   {
     "question": "Which Texas Rule of Civil Procedure governs special exceptions (challenges to the legal sufficiency or clarity of a pleading)?",
-    "options": [
-      "TRCP 85",
-      "TRCP 90",
-      "TRCP 91",
-      "TRCP 93",
-      "TRCP 99"
-    ],
+    "options": ["TRCP 85", "TRCP 90", "TRCP 91", "TRCP 93", "TRCP 99"],
     "answer": 2
   },
   {
-    "question": "Under TRCP 93, a pleading requiring verification must be accompanied by what?",
-    "options": [
-      "A certificate of service",
-      "A notarized affidavit",
-      "A motion for leave",
-      "A hearing notice",
-      "A jury demand"
-    ],
+    "question": "Under TRCP 93, a pleading requiring verification must be accompanied by what?",
+    "options": ["A certificate of service", "A notarized affidavit", "A motion for leave", "A hearing notice", "A jury demand"],
     "answer": 1
   },
   {
     "question": "A defendant desiring to challenge venue must file which pleading?",
-    "options": [
-      "General denial",
-      "Special exception",
-      "Special appearance",
-      "Motion to transfer under TRCP 86",
-      "Plea to the jurisdiction"
-    ],
+    "options": ["General denial", "Special exception", "Special appearance", "Motion to transfer under TRCP 86", "Plea to the jurisdiction"],
     "answer": 3
   },
   {
-    "question": "If a defendant raises both a special appearance and a general denial in the same document, what does TRCP 120a provide?",
-    "options": [
-      "Both are preserved",
-      "The general denial is ineffective",
-      "The special appearance is waived",
-      "The court must consolidate issues",
-      "Filing must be stricken"
-    ],
+    "question": "If a defendant raises both a special appearance and a general denial in the same document, what does TRCP 120a provide?",
+    "options": ["Both are preserved", "The general denial is ineffective", "The special appearance is waived", "The court must consolidate issues", "Filing must be stricken"],
     "answer": 2
   },
   {
     "question": "Which TRCP rule allows a defendant to amend their answer without leave of court before a certain deadline?",
-    "options": [
-      "TRCP 63",
-      "TRCP 64",
-      "TRCP 65",
-      "TRCP 66",
-      "TRCP 71"
-    ],
+    "options": ["TRCP 63", "TRCP 64", "TRCP 65", "TRCP 66", "TRCP 71"],
     "answer": 0
   },
   {
-    "question": "Under TRCP 66, a defendant may amend a pleading without leave of court up until which point?",
-    "options": [
-      "Before answer is due",
-      "Within 7 days of service",
-      "Within 30 days of filing",
-      "Until 7 days before trial",
-      "Before the first hearing"
-    ],
+    "question": "Under TRCP 66, a defendant may amend a pleading without leave of court up until which point?",
+    "options": ["Before answer is due", "Within 7 days of service", "Within 30 days of filing", "Until 7 days before trial", "Before the first hearing"],
     "answer": 3
   },
   {
     "question": "What is the effect of failing to specially except to an insufficient allegation in a pleading?",
-    "options": [
-      "It is waived",
-      "It is automatically cured",
-      "It triggers mandatory sanctions",
-      "It converts to a general denial",
-      "It stays the proceedings"
-    ],
+    "options": ["It is waived", "It is automatically cured", "It triggers mandatory sanctions", "It converts to a general denial", "It stays the proceedings"],
     "answer": 0
   },
   {
-    "question": "Which affirmative defense must a defendant expressly plead or it is waived under TRCP 94?",
-    "options": [
-      "Contributory negligence",
-      "Statute of limitations",
-      "Assumption of risk",
-      "Lack of capacity",
-      "Estoppel"
-    ],
+    "question": "Which affirmative defense must a defendant expressly plead or it is waived under TRCP 94?",
+    "options": ["Contributory negligence", "Statute of limitations", "Assumption of risk", "Lack of capacity", "Estoppel"],
     "answer": 1
   },
   {
-    "question": "A plea to the jurisdiction (TRCP 86) challenges what?",
-    "options": [
-      "Factual sufficiency",
-      "Venue only",
-      "Subject‑matter jurisdiction",
-      "Personal jurisdiction",
-      "Form of the pleading"
-    ],
+    "question": "A plea to the jurisdiction (TRCP 86) challenges what?",
+    "options": ["Factual sufficiency", "Venue only", "Subject‑matter jurisdiction", "Personal jurisdiction", "Form of the pleading"],
     "answer": 3
   },
   {
-    "question": "Under TRCP 91a, what is the deadline to move to dismiss for lack of a cause of action?",
-    "options": [
-      "Within 30 days of answer",
-      "Within 60 days of filing suit",
-      "Within 21 days after service of the pleading",
-      "Before filing any other motion",
-      "At least 10 days before trial"
-    ],
-    "answer": 2
-  }
-]
-[
-  {
-    "question": "Under TRCP 13, how many days must a party wait after serving a motion for sanctions before filing it with the court?",
-    "options": ["7 days","14 days","21 days","30 days","No waiting period"],
+    "question": "Under TRCP 91a, what is the deadline to move to dismiss for lack of a cause of action?",
+    "options": ["Within 30 days of answer", "Within 60 days of filing suit", "Within 21 days after service of the pleading", "Before filing any other motion", "At least 10 days before trial"],
     "answer": 2
   },
   {
-    "question": "What type of sanction may a court impose under TRCP 13 for frivolous pleadings?",
-    "options": ["Contempt of court","Attorney’s fees and expenses","Automatic dismissal","Imprisonment","Transfer of venue"],
+    "question": "Under TRCP 13, how many days must a party wait after serving a motion for sanctions before filing it with the court?",
+    "options": ["7 days", "14 days", "21 days", "30 days", "No waiting period"],
+    "answer": 2
+  },
+  {
+    "question": "What type of sanction may a court impose under TRCP 13 for frivolous pleadings?",
+    "options": ["Contempt of court", "Attorney’s fees and expenses", "Automatic dismissal", "Imprisonment", "Transfer of venue"],
     "answer": 1
   },
   {
     "question": "Which rule governs a defendant’s motion to transfer venue in Texas state court?",
-    "options": ["TRCP 85","TRCP 86","TRCP 87","TRCP 90","TRCP 93"],
+    "options": ["TRCP 85", "TRCP 86", "TRCP 87", "TRCP 90", "TRCP 93"],
     "answer": 1
   },
   {
-    "question": "When must a motion to transfer venue under TRCP 86 be filed to preserve the challenge?",
-    "options": ["Within 10 days of service","With the general denial","Prior to or concurrent with any other plea or exception","Within 30 days before trial","At least 60 days before the initial conference"],
+    "question": "When must a motion to transfer venue under TRCP 86 be filed to preserve the challenge?",
+    "options": ["Within 10 days of service", "With the general denial", "Prior to or concurrent with any other plea or exception", "Within 30 days before trial", "At least 60 days before the initial conference"],
     "answer": 2
   },
   {
-    "question": "TRCP 87 allows a defendant to request dismissal on grounds of forum non conveniens. What must the defendant show?",
-    "options": ["Contractual choice of forum","Undue hardship and inconvenience","Improper service of process","Lack of subject-matter jurisdiction","Statute of limitations expired"],
+    "question": "TRCP 87 allows a defendant to request dismissal on grounds of forum non conveniens. What must the defendant show?",
+    "options": ["Contractual choice of forum", "Undue hardship and inconvenience", "Improper service of process", "Lack of subject‑matter jurisdiction", "Statute of limitations expired"],
     "answer": 1
   },
   {
-    "question": "Under TRCP 90, how many times may a party amend its pleading as a matter of course before a hearing on the merits?",
-    "options": ["Once","Twice","Three times","Unlimited","None"],
+    "question": "Under TRCP 90, how many times may a party amend its pleading as a matter of course before a hearing on the merits?",
+    "options": ["Once", "Twice", "Three times", "Unlimited", "None"],
     "answer": 1
   },
   {
     "question": "Which rule authorizes a defendant to assert compulsory counterclaims in their answer?",
-    "options": ["TRCP 63","TRCP 65","TRCP 70","TRCP 71","TRCP 80"],
+    "options": ["TRCP 63", "TRCP 65", "TRCP 70", "TRCP 71", "TRCP 80"],
     "answer": 0
   },
   {
-    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
-    "options": ["Certificate of service","Judge’s signature","Party’s signature and address","Prothonotary’s seal","Jury demand"],
+    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
+    "options": ["Certificate of service", "Judge’s signature", "Party’s signature and address", "Prothonotary’s seal", "Jury demand"],
     "answer": 2
   },
   {
     "question": "Which rule addresses the effect of amended pleadings on pending exceptions and motions?",
-    "options": ["TRCP 82","TRCP 83","TRCP 84","TRCP 85","TRCP 86"],
+    "options": ["TRCP 82", "TRCP 83", "TRCP 84", "TRCP 85", "TRCP 86"],
     "answer": 0
   },
   {
-    "question": "Under TRCP 85, a special appearance challenges what aspect of the lawsuit?",
-    "options": ["Venue","Subject-matter jurisdiction","Personal jurisdiction","Legal sufficiency","Factual sufficiency"],
+    "question": "Under TRCP 85, a special appearance challenges what aspect of the lawsuit?",
+    "options": ["Venue", "Subject‑matter jurisdiction", "Personal jurisdiction", "Legal sufficiency", "Factual sufficiency"],
     "answer": 2
-  }
-]
-[
+  },
   {
-    "question": "Under TRCP 93, which of the following denials must be verified by affidavit?",
-    "options": [
-      "General denial",
-      "Denial of execution or genuineness of an instrument",
-      "Denial of venue",
-      "Denial of jurisdiction",
-      "Denial of damages"
-    ],
+    "question": "Under TRCP 93, which of the following denials must be verified by affidavit?",
+    "options": ["General denial", "Denial of execution or genuineness of an instrument", "Denial of venue", "Denial of jurisdiction", "Denial of damages"],
     "answer": 1
   },
   {
-    "question": "What categories of claims can be dismissed under a TRCP 91a motion to dismiss for no cause of action?",
-    "options": [
-      "Family law and probate claims",
-      "Claims for injunction, mandamus, or quo warranto",
-      "All claims seeking monetary relief",
-      "All tort and contract claims",
-      "All equitable claims"
-    ],
+    "question": "What categories of claims can be dismissed under a TRCP 91a motion to dismiss for no cause of action?",
+    "options": ["Family law and probate claims", "Claims for injunction, mandamus, or quo warranto", "All claims seeking monetary relief", "All tort and contract claims", "All equitable claims"],
     "answer": 1
   },
   {
-    "question": "Under TRCP 91a, what happens to discovery while a motion to dismiss is pending?",
-    "options": [
-      "Discovery proceeds normally",
-      "Discovery is automatically stayed",
-      "Discovery continues only on plaintiff’s evidence",
-      "Court may order partial discovery",
-      "Discovery costs are split equally"
-    ],
+    "question": "Under TRCP 91a, what happens to discovery while a motion to dismiss is pending?",
+    "options": ["Discovery proceeds normally", "Discovery is automatically stayed", "Discovery continues only on plaintiff’s evidence", "Court may order partial discovery", "Discovery costs are split equally"],
     "answer": 1
   },
   {
     "question": "Which rule defines compulsory counterclaims that a defendant must assert or forever lose?",
-    "options": [
-      "TRCP 65",
-      "TRCP 97",
-      "TRCP 99",
-      "TRCP 101",
-      "TRCP 105"
-    ],
+    "options": ["TRCP 65", "TRCP 97", "TRCP 99", "TRCP 101", "TRCP 105"],
     "answer": 1
   },
   {
-    "question": "Under TRCP 97(a), a defendant’s failure to plead a compulsory counterclaim results in what?",
-    "options": [
-      "It may be asserted at trial",
-      "It is waived",
-      "It becomes a permissive counterclaim",
-      "It triggers sanctions",
-      "It stays the proceedings"
-    ],
+    "question": "Under TRCP 97(a), a defendant’s failure to plead a compulsory counterclaim results in what?",
+    "options": ["It may be asserted at trial", "It is waived", "It becomes a permissive counterclaim", "It triggers sanctions", "It stays the proceedings"],
     "answer": 1
   },
   {
     "question": "Which rule governs permissive cross‑claims among co‑parties?",
-    "options": [
-      "TRCP 25",
-      "TRCP 63",
-      "TRCP 97(b)",
-      "TRCP 100",
-      "TRCP 120a"
-    ],
+    "options": ["TRCP 25", "TRCP 63", "TRCP 97(b)", "TRCP 100", "TRCP 120a"],
     "answer": 2
   },
   {
-    "question": "Under TRCP 97(b), permissive cross‑claims may be filed when?",
-    "options": [
-      "Only with leave of court",
-      "Within 7 days of trial",
-      "At any time before final judgment",
-      "Only before any answer is filed",
-      "Only after discovery closes"
-    ],
+    "question": "Under TRCP 97(b), permissive cross‑claims may be filed when?",
+    "options": ["Only with leave of court", "Within 7 days of trial", "At any time before final judgment", "Only before any answer is filed", "Only after discovery closes"],
     "answer": 2
   },
   {
-    "question": "What does TRCP 120a specify regarding the effect of pleadings on a special appearance?",
-    "options": [
-      "Filing any other pleading waives it",
-      "It applies only to counterclaims",
-      "It stays the case indefinitely",
-      "It converts to a general denial",
-      "It must be renewed each term"
-    ],
+    "question": "What does TRCP 120a specify regarding the effect of pleadings on a special appearance?",
+    "options": ["Filing any other pleading waives it", "It applies only to counterclaims", "It stays the case indefinitely", "It converts to a general denial", "It must be renewed each term"],
     "answer": 0
   },
   {
-    "question": "Under TRCP 85, a defendant’s special appearance must be filed:",
-    "options": [
-      "At least 30 days before trial",
-      "Within 20 days of service of citation",
-      "With or before any other plea, pleading, or motion",
-      "Within 14 days of discovery",
-      "At any time prior to judgment"
-    ],
+    "question": "Under TRCP 85, a defendant’s special appearance must be filed:",
+    "options": ["At least 30 days before trial", "Within 20 days of service of citation", "With or before any other plea, pleading, or motion", "Within 14 days of discovery", "At any time prior to judgment"],
     "answer": 2
   },
   {
     "question": "Which TRCP rule requires a certificate of service on all pleadings, motions, and other filings?",
-    "options": [
-      "TRCP 69",
-      "TRCP 71",
-      "TRCP 81",
-      "TRCP 88",
-      "TRCP 90"
-    ],
+    "options": ["TRCP 69", "TRCP 71", "TRCP 81", "TRCP 88", "TRCP 90"],
     "answer": 1
-  }
-]
-[
+  },
   {
-    "question": "Under TRCP 13, what must every pleading, motion, or other document filed with the court include?",
-    "options": [
-      "Plaintiff’s signature and address",
-      "Judge’s endorsement",
-      "Signature of the filing party or counsel and their contact information",
-      "A jury demand",
-      "A hearing date"
-    ],
+    "question": "Under TRCP 13, what must every pleading, motion, or other document filed with the court include?",
+    "options": ["Plaintiff’s signature and address", "Judge’s endorsement", "Signature of the filing party or counsel and their contact information", "A jury demand", "A hearing date"],
     "answer": 2
   },
   {
-    "question": "TRCP 63 allows a party to amend its pleading once as a matter of course. Until when may this amendment occur?",
-    "options": [
-      "Until 7 days before trial",
-      "Within 20 days of service",
-      "Within 30 days of service",
-      "Any time before final judgment",
-      "Only before the first hearing"
-    ],
+    "question": "TRCP 63 allows a party to amend its pleading once as a matter of course. Until when may this amendment occur?",
+    "options": ["Until 7 days before trial", "Within 20 days of service", "Within 30 days of service", "Any time before final judgment", "Only before the first hearing"],
     "answer": 0
   },
   {
     "question": "Which Rule governs amendments to pleadings by leave of court at any time before final judgment?",
-    "options": [
-      "TRCP 65",
-      "TRCP 66",
-      "TRCP 64",
-      "TRCP 67",
-      "TRCP 69"
-    ],
+    "options": ["TRCP 65", "TRCP 66", "TRCP 64", "TRCP 67", "TRCP 69"],
     "answer": 0
   },
   {
-    "question": "Under TRCP 66, after the amendment-as-of-course deadline passes, when may a party still amend its pleading?",
-    "options": [
-      "Within 10 days of service",
-      "Only with leave of court",
-      "Within 3 days before trial",
-      "When the opposing party consents",
-      "Never"
-    ],
+    "question": "Under TRCP 66, after the amendment-as-of-course deadline passes, when may a party still amend its pleading?",
+    "options": ["Within 10 days of service", "Only with leave of court", "Within 3 days before trial", "When the opposing party consents", "Never"],
     "answer": 1
   },
   {
-    "question": "TRCP 89 requires notice of a hearing on special exceptions to be given how far in advance?",
-    "options": [
-      "At least 24 hours before",
-      "At least 3 days before",
-      "At least 7 days before",
-      "At least 14 days before",
-      "At least 30 days before"
-    ],
+    "question": "TRCP 89 requires notice of a hearing on special exceptions to be given how far in advance?",
+    "options": ["At least 24 hours before", "At least 3 days before", "At least 7 days before", "At least 14 days before", "At least 30 days before"],
     "answer": 1
   },
   {
     "question": "Which Rule permits a pleading to incorporate by reference another pleading or part thereof?",
-    "options": [
-      "TRCP 63",
-      "TRCP 80",
-      "TRCP 85",
-      "TRCP 90",
-      "TRCP 91"
-    ],
+    "options": ["TRCP 63", "TRCP 80", "TRCP 85", "TRCP 90", "TRCP 91"],
     "answer": 1
   },
   {
-    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
-    "options": [
-      "Judge’s signature",
-      "Party’s social security number",
-      "Certificate of service",
-      "Proof of payment",
-      "Hearing date"
-    ],
+    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
+    "options": ["Judge’s signature", "Party’s social security number", "Certificate of service", "Proof of payment", "Hearing date"],
     "answer": 2
   },
   {
-    "question": "TRCP 85.1 requires a special appearance to:",
-    "options": [
-      "Be filed within 30 days of service",
-      "Be supported by sworn affidavit",
-      "Challenge venue only",
-      "Request continuance",
-      "Include a jury demand"
-    ],
+    "question": "TRCP 85.1 requires a special appearance to:",
+    "options": ["Be filed within 30 days of service", "Be supported by sworn affidavit", "Challenge venue only", "Request continuance", "Include a jury demand"],
     "answer": 1
   },
   {
     "question": "Which Rule sets the deadline to file a motion to transfer venue in Texas civil court?",
-    "options": [
-      "TRCP 85",
-      "TRCP 86",
-      "TRCP 87",
-      "TRCP 90",
-      "TRCP 93"
-    ],
+    "options": ["TRCP 85", "TRCP 86", "TRCP 87", "TRCP 90", "TRCP 93"],
     "answer": 1
   },
   {
-    "question": "Under TRCP 93, which denial must be verified by affidavit?",
-    "options": [
-      "General denial",
-      "Denial of an instrument’s execution or its genuineness",
-      "Denial of venue",
-      "Denial of damages claimed",
-      "Denial of jurisdiction"
-    ],
+    "question": "Under TRCP 93, which denial must be verified by affidavit?",
+    "options": ["General denial", "Denial of an instrument’s execution or its genuineness", "Denial of venue", "Denial of damages claimed", "Denial of jurisdiction"],
     "answer": 1
-  }
-]
-[
+  },
   {
-    "question": "According to TRCP 86, a motion to transfer venue must be filed:",
-    "options": [
-      "Any time before trial begins",
-      "At any point before the answer deadline",
-      "Before or concurrently with the first responsive pleading",
-      "After filing a general denial",
-      "After a Rule 11 agreement has been entered"
-    ],
+    "question": "According to TRCP 86, a motion to transfer venue must be filed:",
+    "options": ["Any time before trial begins", "At any point before the answer deadline", "Before or concurrently with the first responsive pleading", "After filing a general denial", "After a Rule 11 agreement has been entered"],
     "answer": 2
   },
   {
-    "question": "In Moki Mac River Expeditions v. Drugg, 221 S.W.3d 569 (Tex. 2007), what principle did the Texas Supreme Court emphasize when rejecting personal jurisdiction over a Utah‑based defendant?",
-    "options": [
-      "Minimum contacts via indirect advertising",
-      "Lack of purposeful availment despite student recruitment",
-      "Failure to register an assumed name",
-      "No evidence of actual product defect",
-      "Doctrine of forum non conveniens"
-    ],
+    "question": "In Moki Mac River Expeditions v. Drugg, 221 S.W.3d 569 (Tex. 2007), what principle did the Texas Supreme Court emphasize when rejecting personal jurisdiction over a Utah‑based defendant?",
+    "options": ["Minimum contacts via indirect advertising", "Lack of purposeful availment despite student recruitment", "Failure to register an assumed name", "No evidence of actual product defect", "Doctrine of forum non conveniens"],
     "answer": 1
   },
   {
-    "question": "Which of the following *must* be verified under TRCP 93 to be effective?",
-    "options": [
-      "Denial of a party’s capacity",
-      "Denial of allegations in general",
-      "Objection to venue",
-      "Challenge to personal jurisdiction",
-      "Request for jury trial"
-    ],
+    "question": "Which of the following must be verified under TRCP 93 to be effective?",
+    "options": ["Denial of a party’s capacity", "Denial of allegations in general", "Objection to venue", "Challenge to personal jurisdiction", "Request for jury trial"],
     "answer": 0
   },
   {
     "question": "According to O’Connor’s summary chart, if the plaintiff did not file an assumed‑name certificate, the appropriate pleading is:",
-    "options": [
-      "General denial",
-      "Plea to the jurisdiction",
-      "Motion to abate with verified denial",
-      "Motion for continuance",
-      "Special appearance"
-    ],
+    "options": ["General denial", "Plea to the jurisdiction", "Motion to abate with verified denial", "Motion for continuance", "Special appearance"],
     "answer": 2
   },
   {
-    "question": "When filing a special appearance, which of the following is **not** required?",
-    "options": [
-      "The pleading must be verified",
-      "The pleading must state specific jurisdictional facts",
-      "The pleading must be filed before any other motion",
-      "The hearing must be held before a ruling on any other motion",
-      "The defendant must negate all alleged jurisdictional bases"
-    ],
+    "question": "When filing a special appearance, which of the following is not required?",
+    "options": ["The pleading must be verified", "The pleading must state specific jurisdictional facts", "The pleading must be filed before any other motion", "The hearing must be held before a ruling on any other motion", "The defendant must negate all alleged jurisdictional bases"],
     "answer": 1
   },
   {
-    "question": "Which of the following would **not** constitute purposeful availment under the stream‑of‑commerce test?",
-    "options": [
-      "Establishing a Texas distributor",
-      "Advertising directly to Texas customers",
-      "Emailing one customer in Texas",
-      "Designing a product specifically for Texas use",
-      "Shipping product directly to Texas buyers"
-    ],
+    "question": "Which of the following would not constitute purposeful availment under the stream‑of‑commerce test?",
+    "options": ["Establishing a Texas distributor", "Advertising directly to Texas customers", "Emailing one customer in Texas", "Designing a product specifically for Texas use", "Shipping product directly to Texas buyers"],
     "answer": 2
   },
   {
     "question": "According to O’Connor’s, a defendant who believes the plaintiff sued the wrong defendant should file:",
-    "options": [
-      "A Rule 11 agreement and plea in abatement",
-      "A verified denial and a motion for summary judgment",
-      "A special exception and a motion to transfer venue",
-      "A general denial with verified affidavit",
-      "A counterclaim and a Rule 91a motion"
-    ],
+    "options": ["A Rule 11 agreement and plea in abatement", "A verified denial and a motion for summary judgment", "A special exception and a motion to transfer venue", "A general denial with verified affidavit", "A counterclaim and a Rule 91a motion"],
     "answer": 1
   },
   {
     "question": "Under Texas law, what is the effect of the plaintiff’s failure to meet the notice requirement under a DTPA claim?",
-    "options": [
-      "The claim must be abated",
-      "The case must be removed to federal court",
-      "The claim is deemed waived",
-      "The defendant must file a special exception",
-      "The court must dismiss for lack of jurisdiction"
-    ],
+    "options": ["The claim must be abated", "The case must be removed to federal court", "The claim is deemed waived", "The defendant must file a special exception", "The court must dismiss for lack of jurisdiction"],
     "answer": 0
   },
   {
     "question": "A defendant files a special appearance, and later files a motion to compel arbitration. What is the likely effect?",
-    "options": [
-      "The court will strike the arbitration motion",
-      "The court will hear the arbitration issue first",
-      "The court will rule that personal jurisdiction was waived",
-      "The defendant preserved the jurisdictional challenge",
-      "The motion to compel constitutes a general appearance"
-    ],
+    "options": ["The court will strike the arbitration motion", "The court will hear the arbitration issue first", "The court will rule that personal jurisdiction was waived", "The defendant preserved the jurisdictional challenge", "The motion to compel constitutes a general appearance"],
     "answer": 4
   },
   {
     "question": "In Texas, if the plaintiff’s petition fails to allege facts showing all elements of a cause of action, what procedural step should the defendant take?",
-    "options": [
-      "Motion to abate",
-      "Verified denial",
-      "Rule 91a motion to dismiss",
-      "Motion for sanctions",
-      "Plea to the jurisdiction"
-    ],
+    "options": ["Motion to abate", "Verified denial", "Rule 91a motion to dismiss", "Motion for sanctions", "Plea to the jurisdiction"],
     "answer": 2
   }
 ]
+
