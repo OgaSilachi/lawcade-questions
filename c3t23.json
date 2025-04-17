@@ -1,552 +1,500 @@
 [
   {
-    "question": "Under Texas Rules of Civil Procedure, what is the general deadline for a defendant to file an answer after being served?",
+    "question": "Which Texas Rule of Civil Procedure governs special exceptions (challenges to the legal sufficiency or clarity of a pleading)?",
     "options": [
-      "10 days from service",
-      "20 days from service",
-      "By 5:00 p.m. on the Monday next after 20 days from service",
-      "30 days from service",
-      "By the end of the calendar month of service"
+      "TRCP 85",
+      "TRCP 90",
+      "TRCP 91",
+      "TRCP 93",
+      "TRCP 99"
     ],
     "answer": 2
   },
   {
-    "question": "Which Texas Rule governs the filing of a general denial?",
+    "question": "Under TRCP 93, a pleading requiring verification must be accompanied by what?",
     "options": [
-      "TRCP 84",
-      "TRCP 85",
-      "TRCP 92",
-      "TRCP 90",
-      "TRCP 80"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What type of pleading should a defendant file to challenge the sufficiency of a plaintiff's petition?",
-    "options": [
-      "Motion to Dismiss",
-      "Special Exception",
-      "Special Appearance",
-      "Plea to the Jurisdiction",
-      "Motion for Summary Judgment"
+      "A certificate of service",
+      "A notarized affidavit",
+      "A motion for leave",
+      "A hearing notice",
+      "A jury demand"
     ],
     "answer": 1
   },
   {
-    "question": "Which rule must a defendant follow to raise a Special Appearance in Texas?",
+    "question": "A defendant desiring to challenge venue must file which pleading?",
     "options": [
-      "TRCP 85",
-      "TRCP 86",
-      "TRCP 120a",
-      "TRCP 90",
-      "TRCP 91a"
+      "General denial",
+      "Special exception",
+      "Special appearance",
+      "Motion to transfer under TRCP 86",
+      "Plea to the jurisdiction"
     ],
-    "answer": 2
+    "answer": 3
   },
   {
-    "question": "If a defendant files a Special Appearance, what is the consequence of also filing a general denial at the same time?",
+    "question": "If a defendant raises both a special appearance and a general denial in the same document, what does TRCP 120a provide?",
     "options": [
-      "The special appearance is preserved",
+      "Both are preserved",
+      "The general denial is ineffective",
       "The special appearance is waived",
-      "The answer is stayed",
-      "The court must hold a hearing within 10 days",
-      "The case is automatically removed to federal court"
+      "The court must consolidate issues",
+      "Filing must be stricken"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which TRCP rule allows a defendant to amend their answer without leave of court before a certain deadline?",
+    "options": [
+      "TRCP 63",
+      "TRCP 64",
+      "TRCP 65",
+      "TRCP 66",
+      "TRCP 71"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Under TRCP 66, a defendant may amend a pleading without leave of court up until which point?",
+    "options": [
+      "Before answer is due",
+      "Within 7 days of service",
+      "Within 30 days of filing",
+      "Until 7 days before trial",
+      "Before the first hearing"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What is the effect of failing to specially except to an insufficient allegation in a pleading?",
+    "options": [
+      "It is waived",
+      "It is automatically cured",
+      "It triggers mandatory sanctions",
+      "It converts to a general denial",
+      "It stays the proceedings"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which affirmative defense must a defendant expressly plead or it is waived under TRCP 94?",
+    "options": [
+      "Contributory negligence",
+      "Statute of limitations",
+      "Assumption of risk",
+      "Lack of capacity",
+      "Estoppel"
     ],
     "answer": 1
   },
   {
-    "question": "Sample procedural question 6: What is required for...",
+    "question": "A plea to the jurisdiction (TRCP 86) challenges what?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "Factual sufficiency",
+      "Venue only",
+      "Subject‑matter jurisdiction",
+      "Personal jurisdiction",
+      "Form of the pleading"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "Under TRCP 91a, what is the deadline to move to dismiss for lack of a cause of action?",
+    "options": [
+      "Within 30 days of answer",
+      "Within 60 days of filing suit",
+      "Within 21 days after service of the pleading",
+      "Before filing any other motion",
+      "At least 10 days before trial"
+    ],
+    "answer": 2
+  }
+]
+[
+  {
+    "question": "Under TRCP 13, how many days must a party wait after serving a motion for sanctions before filing it with the court?",
+    "options": ["7 days","14 days","21 days","30 days","No waiting period"],
+    "answer": 2
+  },
+  {
+    "question": "What type of sanction may a court impose under TRCP 13 for frivolous pleadings?",
+    "options": ["Contempt of court","Attorney’s fees and expenses","Automatic dismissal","Imprisonment","Transfer of venue"],
+    "answer": 1
+  },
+  {
+    "question": "Which rule governs a defendant’s motion to transfer venue in Texas state court?",
+    "options": ["TRCP 85","TRCP 86","TRCP 87","TRCP 90","TRCP 93"],
+    "answer": 1
+  },
+  {
+    "question": "When must a motion to transfer venue under TRCP 86 be filed to preserve the challenge?",
+    "options": ["Within 10 days of service","With the general denial","Prior to or concurrent with any other plea or exception","Within 30 days before trial","At least 60 days before the initial conference"],
+    "answer": 2
+  },
+  {
+    "question": "TRCP 87 allows a defendant to request dismissal on grounds of forum non conveniens. What must the defendant show?",
+    "options": ["Contractual choice of forum","Undue hardship and inconvenience","Improper service of process","Lack of subject-matter jurisdiction","Statute of limitations expired"],
+    "answer": 1
+  },
+  {
+    "question": "Under TRCP 90, how many times may a party amend its pleading as a matter of course before a hearing on the merits?",
+    "options": ["Once","Twice","Three times","Unlimited","None"],
+    "answer": 1
+  },
+  {
+    "question": "Which rule authorizes a defendant to assert compulsory counterclaims in their answer?",
+    "options": ["TRCP 63","TRCP 65","TRCP 70","TRCP 71","TRCP 80"],
+    "answer": 0
+  },
+  {
+    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
+    "options": ["Certificate of service","Judge’s signature","Party’s signature and address","Prothonotary’s seal","Jury demand"],
+    "answer": 2
+  },
+  {
+    "question": "Which rule addresses the effect of amended pleadings on pending exceptions and motions?",
+    "options": ["TRCP 82","TRCP 83","TRCP 84","TRCP 85","TRCP 86"],
+    "answer": 0
+  },
+  {
+    "question": "Under TRCP 85, a special appearance challenges what aspect of the lawsuit?",
+    "options": ["Venue","Subject-matter jurisdiction","Personal jurisdiction","Legal sufficiency","Factual sufficiency"],
+    "answer": 2
+  }
+]
+[
+  {
+    "question": "Under TRCP 93, which of the following denials must be verified by affidavit?",
+    "options": [
+      "General denial",
+      "Denial of execution or genuineness of an instrument",
+      "Denial of venue",
+      "Denial of jurisdiction",
+      "Denial of damages"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What categories of claims can be dismissed under a TRCP 91a motion to dismiss for no cause of action?",
+    "options": [
+      "Family law and probate claims",
+      "Claims for injunction, mandamus, or quo warranto",
+      "All claims seeking monetary relief",
+      "All tort and contract claims",
+      "All equitable claims"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Under TRCP 91a, what happens to discovery while a motion to dismiss is pending?",
+    "options": [
+      "Discovery proceeds normally",
+      "Discovery is automatically stayed",
+      "Discovery continues only on plaintiff’s evidence",
+      "Court may order partial discovery",
+      "Discovery costs are split equally"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which rule defines compulsory counterclaims that a defendant must assert or forever lose?",
+    "options": [
+      "TRCP 65",
+      "TRCP 97",
+      "TRCP 99",
+      "TRCP 101",
+      "TRCP 105"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Under TRCP 97(a), a defendant’s failure to plead a compulsory counterclaim results in what?",
+    "options": [
+      "It may be asserted at trial",
+      "It is waived",
+      "It becomes a permissive counterclaim",
+      "It triggers sanctions",
+      "It stays the proceedings"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which rule governs permissive cross‑claims among co‑parties?",
+    "options": [
+      "TRCP 25",
+      "TRCP 63",
+      "TRCP 97(b)",
+      "TRCP 100",
+      "TRCP 120a"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Under TRCP 97(b), permissive cross‑claims may be filed when?",
+    "options": [
+      "Only with leave of court",
+      "Within 7 days of trial",
+      "At any time before final judgment",
+      "Only before any answer is filed",
+      "Only after discovery closes"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does TRCP 120a specify regarding the effect of pleadings on a special appearance?",
+    "options": [
+      "Filing any other pleading waives it",
+      "It applies only to counterclaims",
+      "It stays the case indefinitely",
+      "It converts to a general denial",
+      "It must be renewed each term"
     ],
     "answer": 0
   },
   {
-    "question": "Sample procedural question 7: What is required for...",
+    "question": "Under TRCP 85, a defendant’s special appearance must be filed:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "At least 30 days before trial",
+      "Within 20 days of service of citation",
+      "With or before any other plea, pleading, or motion",
+      "Within 14 days of discovery",
+      "At any time prior to judgment"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which TRCP rule requires a certificate of service on all pleadings, motions, and other filings?",
+    "options": [
+      "TRCP 69",
+      "TRCP 71",
+      "TRCP 81",
+      "TRCP 88",
+      "TRCP 90"
+    ],
+    "answer": 1
+  }
+]
+[
+  {
+    "question": "Under TRCP 13, what must every pleading, motion, or other document filed with the court include?",
+    "options": [
+      "Plaintiff’s signature and address",
+      "Judge’s endorsement",
+      "Signature of the filing party or counsel and their contact information",
+      "A jury demand",
+      "A hearing date"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "TRCP 63 allows a party to amend its pleading once as a matter of course. Until when may this amendment occur?",
+    "options": [
+      "Until 7 days before trial",
+      "Within 20 days of service",
+      "Within 30 days of service",
+      "Any time before final judgment",
+      "Only before the first hearing"
     ],
     "answer": 0
   },
   {
-    "question": "Sample procedural question 8: What is required for...",
+    "question": "Which Rule governs amendments to pleadings by leave of court at any time before final judgment?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "TRCP 65",
+      "TRCP 66",
+      "TRCP 64",
+      "TRCP 67",
+      "TRCP 69"
     ],
     "answer": 0
   },
   {
-    "question": "Sample procedural question 9: What is required for...",
+    "question": "Under TRCP 66, after the amendment-as-of-course deadline passes, when may a party still amend its pleading?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "Within 10 days of service",
+      "Only with leave of court",
+      "Within 3 days before trial",
+      "When the opposing party consents",
+      "Never"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "TRCP 89 requires notice of a hearing on special exceptions to be given how far in advance?",
+    "options": [
+      "At least 24 hours before",
+      "At least 3 days before",
+      "At least 7 days before",
+      "At least 14 days before",
+      "At least 30 days before"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which Rule permits a pleading to incorporate by reference another pleading or part thereof?",
+    "options": [
+      "TRCP 63",
+      "TRCP 80",
+      "TRCP 85",
+      "TRCP 90",
+      "TRCP 91"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Under TRCP 71, what must accompany every pleading, motion, or other paper filed with the court?",
+    "options": [
+      "Judge’s signature",
+      "Party’s social security number",
+      "Certificate of service",
+      "Proof of payment",
+      "Hearing date"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "TRCP 85.1 requires a special appearance to:",
+    "options": [
+      "Be filed within 30 days of service",
+      "Be supported by sworn affidavit",
+      "Challenge venue only",
+      "Request continuance",
+      "Include a jury demand"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which Rule sets the deadline to file a motion to transfer venue in Texas civil court?",
+    "options": [
+      "TRCP 85",
+      "TRCP 86",
+      "TRCP 87",
+      "TRCP 90",
+      "TRCP 93"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Under TRCP 93, which denial must be verified by affidavit?",
+    "options": [
+      "General denial",
+      "Denial of an instrument’s execution or its genuineness",
+      "Denial of venue",
+      "Denial of damages claimed",
+      "Denial of jurisdiction"
+    ],
+    "answer": 1
+  }
+]
+[
+  {
+    "question": "According to TRCP 86, a motion to transfer venue must be filed:",
+    "options": [
+      "Any time before trial begins",
+      "At any point before the answer deadline",
+      "Before or concurrently with the first responsive pleading",
+      "After filing a general denial",
+      "After a Rule 11 agreement has been entered"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In Moki Mac River Expeditions v. Drugg, 221 S.W.3d 569 (Tex. 2007), what principle did the Texas Supreme Court emphasize when rejecting personal jurisdiction over a Utah‑based defendant?",
+    "options": [
+      "Minimum contacts via indirect advertising",
+      "Lack of purposeful availment despite student recruitment",
+      "Failure to register an assumed name",
+      "No evidence of actual product defect",
+      "Doctrine of forum non conveniens"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following *must* be verified under TRCP 93 to be effective?",
+    "options": [
+      "Denial of a party’s capacity",
+      "Denial of allegations in general",
+      "Objection to venue",
+      "Challenge to personal jurisdiction",
+      "Request for jury trial"
     ],
     "answer": 0
   },
   {
-    "question": "Sample procedural question 10: What is required for...",
+    "question": "According to O’Connor’s summary chart, if the plaintiff did not file an assumed‑name certificate, the appropriate pleading is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "General denial",
+      "Plea to the jurisdiction",
+      "Motion to abate with verified denial",
+      "Motion for continuance",
+      "Special appearance"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When filing a special appearance, which of the following is **not** required?",
+    "options": [
+      "The pleading must be verified",
+      "The pleading must state specific jurisdictional facts",
+      "The pleading must be filed before any other motion",
+      "The hearing must be held before a ruling on any other motion",
+      "The defendant must negate all alleged jurisdictional bases"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following would **not** constitute purposeful availment under the stream‑of‑commerce test?",
+    "options": [
+      "Establishing a Texas distributor",
+      "Advertising directly to Texas customers",
+      "Emailing one customer in Texas",
+      "Designing a product specifically for Texas use",
+      "Shipping product directly to Texas buyers"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "According to O’Connor’s, a defendant who believes the plaintiff sued the wrong defendant should file:",
+    "options": [
+      "A Rule 11 agreement and plea in abatement",
+      "A verified denial and a motion for summary judgment",
+      "A special exception and a motion to transfer venue",
+      "A general denial with verified affidavit",
+      "A counterclaim and a Rule 91a motion"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Under Texas law, what is the effect of the plaintiff’s failure to meet the notice requirement under a DTPA claim?",
+    "options": [
+      "The claim must be abated",
+      "The case must be removed to federal court",
+      "The claim is deemed waived",
+      "The defendant must file a special exception",
+      "The court must dismiss for lack of jurisdiction"
     ],
     "answer": 0
   },
   {
-    "question": "Sample procedural question 11: What is required for...",
+    "question": "A defendant files a special appearance, and later files a motion to compel arbitration. What is the likely effect?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "The court will strike the arbitration motion",
+      "The court will hear the arbitration issue first",
+      "The court will rule that personal jurisdiction was waived",
+      "The defendant preserved the jurisdictional challenge",
+      "The motion to compel constitutes a general appearance"
     ],
-    "answer": 0
+    "answer": 4
   },
   {
-    "question": "Sample procedural question 12: What is required for...",
+    "question": "In Texas, if the plaintiff’s petition fails to allege facts showing all elements of a cause of action, what procedural step should the defendant take?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
+      "Motion to abate",
+      "Verified denial",
+      "Rule 91a motion to dismiss",
+      "Motion for sanctions",
+      "Plea to the jurisdiction"
     ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 13: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 14: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 15: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 16: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 17: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 18: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 19: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 20: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 21: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 22: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 23: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 24: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 25: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 26: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 27: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 28: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 29: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 30: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 31: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 32: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 33: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 34: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 35: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 36: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 37: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 38: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 39: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 40: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 41: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 42: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 43: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 44: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 45: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 46: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 47: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 48: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 49: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sample procedural question 50: What is required for...",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D",
-      "Option E"
-    ],
-    "answer": 0
+    "answer": 2
   }
 ]
