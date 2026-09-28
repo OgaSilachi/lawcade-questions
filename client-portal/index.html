@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Case Portal</title>
+  <meta name="description" content="A private, client-facing portal showing where a legal matter stands, what happens next, and what the client needs to provide.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-2: #eef2f7;
+      --border: #dfe6ee;
+      --text: #1a2433;
+      --text-muted: #5b6674;
+      --brand: #1d4ed8;
+      --brand-soft: #e6efff;
+      --ok: #059669;
+      --ok-soft: #e3f6ee;
+      --wait: #b45309;
+      --wait-soft: #fbeedc;
+    }
+    :root:not([data-theme="light"]) {
+      @media (prefers-color-scheme: dark) {
+        --bg: #0b1120; --surface: #0f172a; --surface-2: #1e293b;
+        --border: #26344a; --text: #f1f5f9; --text-muted: #94a3b8;
+        --brand: #60a5fa; --brand-soft: #16233c;
+        --ok: #34d399; --ok-soft: #10241d;
+        --wait: #fbbf24; --wait-soft: #2a2110;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b1120; --surface: #0f172a; --surface-2: #1e293b;
+      --border: #26344a; --text: #f1f5f9; --text-muted: #94a3b8;
+      --brand: #60a5fa; --brand-soft: #16233c;
+      --ok: #34d399; --ok-soft: #10241d;
+      --wait: #fbbf24; --wait-soft: #2a2110;
+    }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); }
+    .surface { background: var(--surface); border: 1px solid var(--border); }
+    .surface-2 { background: var(--surface-2); }
+    .muted { color: var(--text-muted); }
+    .brand-text { color: var(--brand); }
+    .brand-bg-soft { background: var(--brand-soft); }
+    .ok-text { color: var(--ok); } .ok-soft { background: var(--ok-soft); }
+    .wait-text { color: var(--wait); } .wait-soft { background: var(--wait-soft); }
+    .step-done .step-dot { background: var(--ok); border-color: var(--ok); color: #fff; }
+    .step-current .step-dot { background: var(--brand); border-color: var(--brand); color: #fff; }
+    .step-todo .step-dot { background: var(--surface); border-color: var(--border); color: var(--text-muted); }
+    .step-line-done { background: var(--ok); }
+    .step-line-todo { background: var(--border); }
+    @media print { .no-print { display: none !important; } body { background: #fff; color: #000; } }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- ============================================================= -->
+  <!-- HEADER -->
+  <!-- ============================================================= -->
+  <header class="surface border-b sticky top-0 z-40 px-4 sm:px-6 lg:px-8 py-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 rounded-xl brand-bg-soft brand-text">
+          <i class="fa-solid fa-scale-balanced text-xl"></i>
+        </div>
+        <div>
+          <div class="text-sm font-semibold" id="firm-name">Firm Name</div>
+          <h1 class="text-lg font-bold leading-tight" id="case-title">Case Title</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="status-badge" class="px-3 py-1 text-xs font-semibold rounded-full ok-soft ok-text"></span>
+        <button onclick="toggleTheme()" class="no-print p-2 rounded-lg surface muted hover:brand-text transition" title="Toggle light/dark">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- WELCOME / WHERE THINGS STAND -->
+    <section class="surface rounded-2xl p-5 sm:p-6">
+      <div class="flex items-start gap-3">
+        <div class="p-2 rounded-lg brand-bg-soft brand-text shrink-0"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <div class="space-y-1">
+          <h2 class="text-base font-bold">Where your case stands</h2>
+          <p class="text-sm muted leading-relaxed" id="summary-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESS TRACKER -->
+    <section class="surface rounded-2xl p-5 sm:p-6">
+      <h2 class="text-base font-bold mb-5 flex items-center gap-2"><i class="fa-solid fa-route brand-text"></i> Your case roadmap</h2>
+      <ol id="stage-tracker" class="space-y-0"></ol>
+    </section>
+
+    <!-- TWO COLUMN: TIMELINE + UPCOMING -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- TIMELINE -->
+      <section class="surface rounded-2xl p-5 sm:p-6 lg:col-span-2">
+        <h2 class="text-base font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-timeline brand-text"></i> Case activity</h2>
+        <div id="timeline" class="relative pl-6 space-y-5"></div>
+      </section>
+
+      <!-- UPCOMING DATES -->
+      <section class="surface rounded-2xl p-5 sm:p-6 lg:col-span-1">
+        <h2 class="text-base font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-calendar-day brand-text"></i> Upcoming</h2>
+        <div id="upcoming" class="space-y-3"></div>
+      </section>
+    </div>
+
+    <!-- WHAT WE NEED FROM YOU -->
+    <section class="surface rounded-2xl p-5 sm:p-6">
+      <div class="flex items-center justify-between mb-4 gap-3 flex-wrap">
+        <h2 class="text-base font-bold flex items-center gap-2"><i class="fa-solid fa-list-check brand-text"></i> What we need from you</h2>
+        <div class="flex items-center gap-2 text-xs muted">
+          <span id="task-progress-label">0 of 0 done</span>
+          <div class="w-28 h-2 rounded-full surface-2 overflow-hidden">
+            <div id="task-progress-bar" class="h-2 rounded-full transition-all duration-500" style="width:0%; background: var(--ok);"></div>
+          </div>
+        </div>
+      </div>
+      <div id="tasks" class="space-y-2"></div>
+      <p class="text-xs muted mt-3"><i class="fa-solid fa-circle-info"></i> Checking a box here is just a personal reminder saved on this device. It does not send anything to your legal team.</p>
+    </section>
+
+    <!-- DOCUMENTS -->
+    <section class="surface rounded-2xl p-5 sm:p-6">
+      <h2 class="text-base font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-folder-open brand-text"></i> Shared documents</h2>
+      <div id="documents" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+    </section>
+
+    <!-- CONTACT + FAQ -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <section class="surface rounded-2xl p-5 sm:p-6">
+        <h2 class="text-base font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-headset brand-text"></i> Your legal team</h2>
+        <div id="contacts" class="space-y-3"></div>
+      </section>
+
+      <section class="surface rounded-2xl p-5 sm:p-6">
+        <h2 class="text-base font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-circle-question brand-text"></i> Common questions</h2>
+        <div id="faq" class="space-y-2"></div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+    <p class="text-xs muted" id="footer-note"></p>
+    <button onclick="window.print()" class="no-print mt-3 text-xs muted hover:brand-text transition"><i class="fa-solid fa-print"></i> Print this page</button>
+  </footer>
+
+  <script>
+    /* ================================================================
+       EDIT EVERYTHING BELOW. No coding needed, just change the text.
+       This one CONFIG object controls the whole page. Copy this file
+       for each client and update these values.
+       IMPORTANT: Keep this page client-safe. Do NOT paste internal
+       strategy, settlement ranges, or deposition plans here.
+       ================================================================ */
+    const CONFIG = {
+      firmName: "Silachi Law Firm",
+      caseTitle: "Your Matter: Snegirev Defense",
+      clientName: "Anna",
+      status: { label: "Active", tone: "ok" }, // tone: "ok" | "wait" | "brand"
+
+      summary:
+        "Hi Anna. This page is your private window into your case. We are in the " +
+        "information-gathering stage before mediation. Right now the most helpful thing " +
+        "you can do is send us the documents listed below. We will update this page as " +
+        "things move, so check back any time to see the latest.",
+
+      // Roadmap stages. status: "done" | "current" | "todo"
+      stages: [
+        { name: "Case opened", desc: "We reviewed your situation and took on the matter.", status: "done" },
+        { name: "Gathering information", desc: "Collecting documents and organizing the facts.", status: "current" },
+        { name: "Mediation", desc: "A guided conversation to try to resolve things without a trial.", status: "todo" },
+        { name: "Court, if needed", desc: "If mediation does not resolve it, we prepare and present your case.", status: "todo" },
+        { name: "Resolution", desc: "The matter is closed and final.", status: "todo" },
+      ],
+
+      // Plain-language activity log, newest first. tone: "done" | "current" | "future"
+      timeline: [
+        { date: "Coming up", title: "Mediation session", body: "A neutral mediator will help both sides try to reach an agreement.", tone: "future" },
+        { date: "This month", title: "Organizing your records", body: "We are assembling your financial records to give a clear, complete picture.", tone: "current" },
+        { date: "Mar 23, 2026", title: "Letter received from the other side", body: "The opposing attorney sent another letter. We reviewed it and are responding.", tone: "done" },
+        { date: "Dec 1, 2025", title: "Follow-up letter received", body: "A further letter came in from the opposing attorney. Noted and handled.", tone: "done" },
+        { date: "Aug 6, 2025", title: "First demand letter received", body: "The other side sent an initial letter. This is a normal opening step.", tone: "done" },
+      ],
+
+      // Upcoming dates. Leave date as "TBD" if not scheduled yet.
+      upcoming: [
+        { date: "TBD", label: "Mediation session", note: "We will confirm the date with you as soon as it is set." },
+        { date: "Ongoing", label: "Document collection", note: "Please send items from the checklist when you can." },
+      ],
+
+      // Things the client should do or send. Keep them concrete.
+      tasks: [
+        { id: "t1", text: "Send bank statements for Nov 2024 through Mar 2025" },
+        { id: "t2", text: "Send your 2023 and 2024 income (1099) forms" },
+        { id: "t3", text: "Send any paperwork about the vehicle purchase" },
+        { id: "t4", text: "Send the travel booking confirmation and receipts" },
+        { id: "t5", text: "Note any dates you are unavailable in the next 60 days" },
+      ],
+
+      // Documents you have shared with the client. Use "#" for links you
+      // will fill in later, or point to your real file-sharing links.
+      documents: [
+        { name: "Welcome & what to expect", type: "PDF", link: "#" },
+        { name: "Fee agreement (your copy)", type: "PDF", link: "#" },
+        { name: "Document request checklist", type: "PDF", link: "#" },
+      ],
+
+      contacts: [
+        { name: "Your attorney", role: "Lead attorney", email: "silachi@silachilaw.com", phone: "" },
+        { name: "Client services", role: "Questions & scheduling", email: "silachi@silachilaw.com", phone: "" },
+      ],
+
+      faq: [
+        { q: "What is mediation?", a: "It is a private meeting where a neutral person helps both sides try to reach an agreement, so you can avoid the time and cost of a trial. You are never forced to agree to anything." },
+        { q: "Do I have to do anything right now?", a: "The most helpful thing is to send us the documents in the checklist above. We will always tell you clearly if we need anything else." },
+        { q: "How will I hear about updates?", a: "We update this page as your case moves, and we will reach out directly for anything time-sensitive." },
+        { q: "Is this page private?", a: "Yes. It is meant only for you. Please do not forward it, since it relates to your confidential matter." },
+      ],
+
+      footerNote: "This portal is private and prepared for you by your legal team. It is a summary for your convenience and is not legal advice on its own. Please do not share or forward it.",
+    };
+
+    /* ================================================================
+       Rendering logic below. You do not need to edit anything past here.
+       ================================================================ */
+    const $ = (id) => document.getElementById(id);
+    const toneMap = {
+      ok:   { soft: "ok-soft",   text: "ok-text" },
+      wait: { soft: "wait-soft", text: "wait-text" },
+      brand:{ soft: "brand-bg-soft", text: "brand-text" },
+    };
+
+    function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+    function render() {
+      $("firm-name").textContent = CONFIG.firmName;
+      $("case-title").textContent = CONFIG.caseTitle;
+      $("summary-text").textContent = CONFIG.summary;
+      $("footer-note").textContent = CONFIG.footerNote;
+
+      const t = toneMap[CONFIG.status.tone] || toneMap.ok;
+      const badge = $("status-badge");
+      badge.textContent = CONFIG.status.label;
+      badge.className = `px-3 py-1 text-xs font-semibold rounded-full ${t.soft} ${t.text}`;
+
+      // Stages
+      $("stage-tracker").innerHTML = CONFIG.stages.map((s, i) => {
+        const cls = s.status === "done" ? "step-done" : s.status === "current" ? "step-current" : "step-todo";
+        const icon = s.status === "done" ? '<i class="fa-solid fa-check text-xs"></i>' :
+                     s.status === "current" ? '<i class="fa-solid fa-circle text-[8px]"></i>' : (i+1);
+        const isLast = i === CONFIG.stages.length - 1;
+        const lineCls = s.status === "done" ? "step-line-done" : "step-line-todo";
+        return `
+          <li class="flex gap-4 ${cls}">
+            <div class="flex flex-col items-center">
+              <div class="step-dot w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-bold shrink-0">${icon}</div>
+              ${isLast ? '' : `<div class="w-0.5 flex-1 min-h-[28px] ${lineCls}"></div>`}
+            </div>
+            <div class="pb-6 -mt-0.5">
+              <div class="font-semibold text-sm ${s.status==='current' ? 'brand-text' : ''}">${esc(s.name)}${s.status==='current' ? ' <span class="text-xs font-medium">(you are here)</span>' : ''}</div>
+              <div class="text-xs muted mt-0.5">${esc(s.desc)}</div>
+            </div>
+          </li>`;
+      }).join("");
+
+      // Timeline
+      $("timeline").innerHTML = CONFIG.timeline.map(ev => {
+        const dot = ev.tone === "done" ? "var(--ok)" : ev.tone === "current" ? "var(--brand)" : "var(--border)";
+        const ring = ev.tone === "future" ? "muted" : "";
+        return `
+          <div class="relative">
+            <span class="absolute -left-6 top-1.5 w-3 h-3 rounded-full" style="background:${dot}; box-shadow:0 0 0 3px var(--surface)"></span>
+            <span class="absolute -left-[18px] top-4 bottom-[-20px] w-0.5" style="background:var(--border)"></span>
+            <div class="text-xs font-semibold ${ring}">${esc(ev.date)}</div>
+            <div class="text-sm font-semibold mt-0.5">${esc(ev.title)}</div>
+            <div class="text-xs muted mt-0.5 leading-relaxed">${esc(ev.body)}</div>
+          </div>`;
+      }).join("");
+
+      // Upcoming
+      $("upcoming").innerHTML = CONFIG.upcoming.map(u => `
+        <div class="surface-2 rounded-xl p-3">
+          <div class="text-xs font-bold brand-text uppercase tracking-wide">${esc(u.date)}</div>
+          <div class="text-sm font-semibold mt-1">${esc(u.label)}</div>
+          <div class="text-xs muted mt-0.5">${esc(u.note)}</div>
+        </div>`).join("");
+
+      // Documents
+      $("documents").innerHTML = CONFIG.documents.map(d => `
+        <a href="${esc(d.link)}" class="surface-2 rounded-xl p-3 flex items-center gap-3 hover:brand-text transition group">
+          <i class="fa-solid fa-file-lines text-lg brand-text"></i>
+          <div class="min-w-0">
+            <div class="text-sm font-semibold truncate group-hover:underline">${esc(d.name)}</div>
+            <div class="text-xs muted">${esc(d.type)}</div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs muted ml-auto"></i>
+        </a>`).join("");
+
+      // Contacts
+      $("contacts").innerHTML = CONFIG.contacts.map(c => `
+        <div class="surface-2 rounded-xl p-3">
+          <div class="text-sm font-semibold">${esc(c.name)}</div>
+          <div class="text-xs muted">${esc(c.role)}</div>
+          <div class="mt-2 flex flex-col gap-1 text-xs">
+            ${c.email ? `<a href="mailto:${esc(c.email)}" class="brand-text hover:underline"><i class="fa-solid fa-envelope w-4"></i> ${esc(c.email)}</a>` : ''}
+            ${c.phone ? `<a href="tel:${esc(c.phone)}" class="brand-text hover:underline"><i class="fa-solid fa-phone w-4"></i> ${esc(c.phone)}</a>` : ''}
+          </div>
+        </div>`).join("");
+
+      // FAQ
+      $("faq").innerHTML = CONFIG.faq.map((f, i) => `
+        <details class="surface-2 rounded-xl p-3 group">
+          <summary class="text-sm font-semibold cursor-pointer flex items-center justify-between list-none">
+            ${esc(f.q)}
+            <i class="fa-solid fa-chevron-down text-xs muted transition group-open:rotate-180"></i>
+          </summary>
+          <p class="text-xs muted mt-2 leading-relaxed">${esc(f.a)}</p>
+        </details>`).join("");
+
+      renderTasks();
+    }
+
+    const STORE_KEY = "clientPortalTasks:" + (CONFIG.caseTitle || "case");
+    function loadDone() {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch { return {}; }
+    }
+    function saveDone(d) {
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(d)); } catch {}
+    }
+    function renderTasks() {
+      const done = loadDone();
+      $("tasks").innerHTML = CONFIG.tasks.map(t => {
+        const isDone = !!done[t.id];
+        return `
+          <label class="flex items-center gap-3 surface-2 rounded-xl p-3 cursor-pointer">
+            <input type="checkbox" data-id="${esc(t.id)}" ${isDone ? "checked" : ""}
+              class="w-4 h-4 rounded" style="accent-color: var(--ok)">
+            <span class="text-sm ${isDone ? 'line-through muted' : ''}">${esc(t.text)}</span>
+          </label>`;
+      }).join("");
+      document.querySelectorAll('#tasks input[type=checkbox]').forEach(cb => {
+        cb.addEventListener("change", () => {
+          const d = loadDone(); d[cb.dataset.id] = cb.checked; saveDone(d); renderTasks();
+        });
+      });
+      const total = CONFIG.tasks.length;
+      const count = CONFIG.tasks.filter(t => done[t.id]).length;
+      $("task-progress-label").textContent = `${count} of ${total} done`;
+      $("task-progress-bar").style.width = total ? `${Math.round(count/total*100)}%` : "0%";
+    }
+
+    function toggleTheme() {
+      const root = document.documentElement;
+      const current = root.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : current === "light" ? "dark" :
+                   (window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark");
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("portalTheme", next); } catch {}
+    }
+    (function initTheme(){
+      try { const s = localStorage.getItem("portalTheme"); if (s) document.documentElement.setAttribute("data-theme", s); } catch {}
+    })();
+
+    render();
+  </script>
+</body>
+</html>
