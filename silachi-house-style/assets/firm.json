@@ -1,0 +1,46 @@
+{
+  "standard": "SLF-HS-001",
+  "version": "1.0",
+  "firm": {
+    "name": "SILACHI LAW FIRM, PLLC",
+    "signature_name": "THE SILACHI LAW FIRM, PLLC",
+    "attorney": "Uwaoma-Silachi Nwogwugwu",
+    "bar_no": "Texas State Bar No. 24118480",
+    "address_line": "11800 Magnolia Parkway, Suite 2117 · Manvel, Texas 77578",
+    "contact_line": "M: 832-456-4371 · O: 281-993-7590 · Silachi@silachilaw.com"
+  },
+  "fonts": {
+    "serif": "Garamond",
+    "sans": "Gill Sans MT"
+  },
+  "colors": {
+    "ink": "1A1A1A",
+    "oxblood": "5C1A1B",
+    "graphite": "5F5F5F",
+    "hairline": "BFBFBF"
+  },
+  "page": {
+    "margin_top_in": 1.0,
+    "margin_bottom_in": 1.0,
+    "margin_side_in": 1.15,
+    "header_in": 0.5,
+    "footer_in": 0.5
+  },
+  "body": {
+    "size_pt": 12.5,
+    "leading_exact_pt": 17,
+    "after_pt": 9,
+    "align": "justify"
+  },
+  "title": { "size_pt": 26, "tracking_pt": 0.5 },
+  "eyebrow": { "size_pt": 8.5, "tracking_pt": 1.5 },
+  "article": { "size_pt": 14, "tracking_pt": 0.75, "before_pt": 22, "after_pt": 8, "rule_pt": 0.75 },
+  "label": { "size_pt": 8.5, "tracking_pt": 1.0 },
+  "header_footer": { "size_pt": 8, "tracking_pt": 1.0 },
+  "voice": {
+    "max_avg_sentence_words": 22,
+    "max_sentence_words": 40,
+    "banned_phrases": ["hereinafter", "witnesseth", "and/or", "said party", "said agreement"],
+    "banned_chars": ["—", "–"]
+  }
+}
