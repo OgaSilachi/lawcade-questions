@@ -1,0 +1,4 @@
+{"label": "5 · Modern Counsel", "fonts": {"serif": "Calibri", "sans": "Calibri"},
+ "colors": {"oxblood": "1F5C66"},
+ "body": {"size_pt": 11, "leading_exact_pt": 16, "align": "left", "after_pt": 10},
+ "article": {"font": "sans", "case": "caps", "bold": true, "rule": false, "size_pt": 11, "tracking_pt": 0.5}}

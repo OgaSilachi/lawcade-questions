@@ -1,0 +1,4 @@
+{"label": "4 · Legacy Brief", "fonts": {"serif": "Times New Roman", "sans": "Times New Roman"},
+ "colors": {"ink": "000000", "oxblood": "000000", "graphite": "000000", "hairline": "000000"}, "panel": false,
+ "body": {"size_pt": 12, "leading_exact_pt": 20, "after_pt": 6},
+ "article": {"align": "center", "case": "caps", "bold": true, "rule": true, "double_rule": true, "size_pt": 12, "tracking_pt": 0}}

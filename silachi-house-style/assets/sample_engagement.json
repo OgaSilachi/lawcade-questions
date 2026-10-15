@@ -1,0 +1,43 @@
+{
+  "court_safe": false,
+  "doc_type": "Engagement Agreement",
+  "title": "Agreement for Legal Services",
+  "short_title": "Engagement Agreement",
+  "meta": "Prepared for [CLIENT NAME] · [Month D, YYYY] · Matter [MATTER NO.]",
+  "matter_no": "[MATTER NO.]",
+  "at_a_glance": [
+    ["Client", "[CLIENT NAME]"],
+    ["Matter", "[One-line description of the dispute or transaction]"],
+    ["Scope", "Representation through [stage], as defined in Article II"],
+    ["Fee Structure", "[Hourly / Flat / Hybrid], as set out in Article III"],
+    ["Retainer", "$[AMOUNT], held in the firm's IOLTA trust account"],
+    ["Responsible Attorney", "Uwaoma-Silachi Nwogwugwu"]
+  ],
+  "body": [
+    {"article": "Parties and Purpose"},
+    {"p": "This Agreement for Legal Services is between [CLIENT NAME] (the “**Client**”) and The Silachi Law Firm, PLLC (the “**Firm**”). It sets out what the Firm will do, what it will not do, and what the representation costs."},
+    {"article": "Scope of Representation"},
+    {"section": "Included Services", "text": "The Firm will represent the Client in [MATTER DESCRIPTION]. The representation includes the following:"},
+    {"sub": "Investigation of the facts and review of the governing documents."},
+    {"sub": "Preparation and service of written demands and correspondence."},
+    {"sub": "Negotiation with the opposing party and its counsel."},
+    {"section": "Excluded Services", "text": "The representation does not include an appeal, a separate lawsuit, or any matter not named in Section II.A. Those require a new written agreement."},
+    {"article": "Fees and Retainer"},
+    {"section": "Fee", "text": "The Client will pay the Firm [FEE TERMS]. The Firm bills in tenths of an hour and sends a statement each month."},
+    {"section": "Retainer", "text": "The Client will deposit $[AMOUNT] (the “**Retainer**”) before work begins. The Firm holds the Retainer in trust and draws against it only for earned fees and incurred expenses."},
+    {"article": "Client Responsibilities"},
+    {"p": "The Client will:"},
+    {"bullets": [
+      "tell the Firm the truth, including facts that hurt the Client's position;",
+      "keep every document, text message, and email that relates to the matter; and",
+      "respond to the Firm's requests within five business days."
+    ]},
+    {"article": "Termination"},
+    {"p": "Either party may end this Agreement by written notice. The Client remains responsible for fees earned and expenses incurred through the date of termination."}
+  ],
+  "signature": {
+    "attestation": "The parties sign this Agreement to be effective on the date the Firm receives the Retainer.",
+    "parties": [ {"name": "[CLIENT NAME]", "fields": ["Name", "Date"]} ],
+    "firm": true
+  }
+}

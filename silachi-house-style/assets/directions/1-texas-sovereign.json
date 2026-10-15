@@ -1,0 +1,5 @@
+{"label": "1 · Texas Sovereign", "fonts": {"serif": "Times New Roman", "sans": "Times New Roman"},
+ "colors": {"ink": "000000", "oxblood": "000000", "graphite": "333333", "hairline": "000000"},
+ "page": {"margin_side_in": 1.25}, "panel": false,
+ "body": {"size_pt": 12, "leading_exact_pt": 24, "after_pt": 0, "align": "justify"},
+ "article": {"align": "center", "case": "caps", "bold": true, "rule": false, "size_pt": 12, "tracking_pt": 0}}
